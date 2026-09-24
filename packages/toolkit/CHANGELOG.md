@@ -1,3 +1,35 @@
+## 4.15.0 2026-08-27
+
+- **Feature** SageMaker Studio: Support connecting to spaces in domains that use IAM Identity Center (SSO) authentication.
+- **Feature** SageMaker Studio: filter listed Spaces to those belonging to the signed-in IAM Identity Center user.
+
+## 4.14.0 2026-08-20
+
+- **Bug Fix** SageMaker Unified Studio: Fixed Spaces not appearing in the tree view after signing in with SSO to an IAM-based domain (caught in pre-release).
+- **Bug Fix** Updated the AWS SDK credential provider so credentials refreshed by re-running `aws login` are recognized without restarting the IDE.
+- **Bug Fix** SageMaker Unified Studio: only activated user profiles are used for space filtering.
+- **Feature** SageMaker Unified Studio: Automatically reconnect a deeplink-connected Space by refreshing credentials in the browser when the SSH tunnel drops.
+
+## 4.13.0 2026-08-06
+
+- **Feature** Add profile through console option for IAM auth in SMUS
+
+## 4.12.0 2026-07-30
+
+- **Bug Fix** Hide unsupported SageMaker Unified Studio spaces from the Local IDE space list.
+
+## 4.11.0 2026-07-23
+
+- Miscellaneous non-user-facing changes
+
+## 4.10.0 2026-07-09
+
+- **Feature** Auto generate client id for cloudformation lsp if an telemetry is enabled and an anonymous client id is cached
+
+## 4.9.0 2026-07-02
+
+- **Feature** Threat Composer: The CDN used for the Threat Composer editor is now configurable via the setting `aws.threatComposer.cdn`.
+
 ## 4.8.0 2026-06-25
 
 - **Bug Fix** Redshift SQL Notebook: Query results with HTML special characters in column names or cell values are now displayed safely instead of being interpreted as HTML.
